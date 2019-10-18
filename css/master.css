@@ -1,3 +1,9 @@
-.washer{
-  border-radius: 10px;
+.washer {
+  border-radius: 100px;
+  margin: 10px;
+  padding: 100px;
+  height: 50px;
+  width: 50px;
+  background-color: red;
+  float: left;
 }
