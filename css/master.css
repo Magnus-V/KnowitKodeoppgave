@@ -4,6 +4,10 @@ body {
 }
 
 .washer .reserved {
+  background-image:url('washing-machine.png');
+  background-size: 100px;
+  background-repeat: no-repeat;
+  background-position: center;
   border-radius: 100px;
   margin: 10px;
   padding: 100px;
