@@ -11,12 +11,15 @@ $(document).ready(function(){
 
 $('.washer').click(function(){
   $('#washerModal').modal('show');
-  console.log("COMEON");
 });
 
 $('#loggInnBtn').click(function(){
   $('#loggInnModal').modal('show');
 });
+
+$('#reserver').click(function(){
+  $('#reserverModal').modal('show');
+})
 
 $('#logginnBtnConfirm').click(function(){
   if(gUsername == null || gUsername == underfined){

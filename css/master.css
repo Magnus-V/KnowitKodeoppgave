@@ -5,7 +5,18 @@ body {
 
 #reserver {
   height: 50px;
-  width: 50px;
+  width: 150px;
+  font-size: 20px;
+  position: relative;
+  left: 50%;
+  margin-left: -50px;
+  margin-bottom: 10px;
+}
+
+.centered-container {
+  position: relative;
+  left: 5%;
+  margin-bottom: 10px;
 }
 
 .washer .reserved {

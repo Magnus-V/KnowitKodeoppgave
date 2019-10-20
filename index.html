@@ -7,20 +7,21 @@
 </head>
 <body>
 <div class="pt-5">
+  <div id="logInnDiv">
+    <button id="loggInnBtn" type="button" name="button">Logg Inn</button>
+  </div>
 <div id="showNameDiv" class="col-12">
   <p id="showName" class="name"></p>
 </div>
 
-<div id="logInnDiv">
-  <button id="loggInnBtn" type="button" name="button">Logg Inn</button>
-</div>
-
-<div>
-  <button type="button" class="btn btn-primary" name="button" id="reserver">Reserver</button>
-</div>
 
 
 <div>
+  <button type="button" class="btn btn-primary" name="button" id="reserver">Reserver nå</button>
+</div>
+
+
+<div class="centered-container">
   <div class="washer">
   </div>
   <div class="washer">
@@ -49,28 +50,48 @@
 
 <div id="washerModal" class="modal fade" role="dialog">
   <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Vaskemaskin</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
 
-
-<!-- Modal content-->
-<div class="modal-content">
-  <div class="modal-header">
-    <h4 class="modal-title">Vaskemaskin</h4>
-    <button type="button" class="close" data-dismiss="modal">&times;</button>
-
-  </div>
-  <div class="modal-body">
-    <Select>Velg Program
-    <option>Håndvask 20min (30'C)</option><br>
-    <option>Tøyvask 60 min (40'C)</option><br>
-    <option>Kokvask 90 min (60'C)</option>
-    </select>
-  </div>
-  <div class="modal-footer">
-    <button type="button" class="btn btn-primary" data-dismiss="modal">Velg</button>
-    <button type="button" class="btn btn-danger" data-dismiss="modal">Lukk</button>
+      </div>
+      <div class="modal-body">
+        <Select>Velg Program
+        <option>Håndvask 20min (30'C)</option><br>
+        <option>Tøyvask 60 min (40'C)</option><br>
+        <option>Kokvask 90 min (60'C)</option>
+        </select>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Velg</button>
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Lukk</button>
+      </div>
+    </div>
   </div>
 </div>
-</div>
+
+<div id="reserverModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">Vaskemaskin</h4>
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+      </div>
+      <div class="modal-body">
+        <Select>Velg Program
+        <option>Håndvask 20min (30'C)</option><br>
+        <option>Tøyvask 60 min (40'C)</option><br>
+        <option>Kokvask 90 min (60'C)</option>
+        </select>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary" data-dismiss="modal">Velg</button>
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Lukk</button>
+      </div>
+    </div>
+  </div>
 </div>
 
 
@@ -82,32 +103,24 @@
         <h4 class="modal-title">Logg Inn</h4>
         <button type="button" class="close" data-dismiss="modal">&times;</button>
       </div>
-    <div class="modal-body">
-      <div class="col-6">
-      <form class="form-control">
-        <label>Brukernavn:</label>
-        <input type="text" name="" value="Ditt brukernavn">
-        <label>Passord:</label>
-        <input type="password" name="" value="Password">
-      </form>
+      <div class="modal-body" style="height:200px;">
+          <label for="username">Brukernavn:</label>
+          <input type="text" name="username" value="Ditt brukernavn"><br>
+          <label for="password">Passord:</label>
+          <input type="password" name="password" value="Password">
+      </div>
+      <div class="modal-footer">
+      <button type="button" id="logginnBtnConfirm" class="btn btn-primary" data-dismiss="modal">Logg Inn</button>
+      <button type="button" class="btn btn-danger" data-dismiss="modal">Avbryt</button>
+      </div>
     </div>
-    </div>
-    <div class="modal-footer">
-    <button type="button" id="logginnBtnConfirm" class="btn btn-primary" data-dismiss="modal">Logg Inn</button>
-    <button type="button" class="btn btn-danger" data-dismiss="modal">Avbryt</button>
   </div>
 </div>
 
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="js\master.js" charset="utf-8"></script>
 
-  </div>
-</div>
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-<script src="js\master.js" charset="utf-8"></script>
-
-<footer style="position:bottom;">
-<div>Washer icon made by <a href="https://www.flaticon.com/authors/itim2101" title="itim2101">itim2101</a> from <a href="https://www.flaticon.com/"             title="Flaticon">www.flaticon.com</a></div>
-</footer>
 </div>
 </body>
