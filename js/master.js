@@ -22,7 +22,7 @@ $('#reserver').click(function(){
 })
 
 $('#logginnBtnConfirm').click(function(){
-  if(gUsername == null || gUsername == underfined){
+  if(gUsername == null || gUsername == undefined){
     gUsername = $('#inputUsername').val();
   }
 });
