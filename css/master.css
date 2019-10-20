@@ -3,6 +3,11 @@ body {
   height:100%;
 }
 
+#reserver {
+  height: 50px;
+  width: 50px;
+}
+
 .washer .reserved {
   background-image:url('washing-machine.png');
   background-size: 100px;
