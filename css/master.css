@@ -9,6 +9,9 @@
 }
 
 .washer {
+  background-image:url('washing-machine.png');
+  background-size: 50px;
+  background-repeat: no-repeat;
   border-radius: 100px;
   margin: 10px;
   padding: 100px;
