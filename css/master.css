@@ -19,7 +19,7 @@ body {
   margin-bottom: 10px;
 }
 
-.washer .reserved {
+.washer.reserved {
   background-image:url('washing-machine.png');
   background-size: 100px;
   background-repeat: no-repeat;

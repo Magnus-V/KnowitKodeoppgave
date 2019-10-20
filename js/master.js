@@ -28,6 +28,14 @@ $('#logginnBtnConfirm').click(function(){
 });
 
 $('#chosenBtn').click(function(){
-  var x = $('#selectedProgram').selectedIndex;
-  debugger;
-})
+  var x = $('#selectedProgram').prop('selectedIndex');
+  switch (x) {
+    case 0:
+      break;
+    case 1:
+      break;
+    case 2:
+      break;
+    default:
+  }
+});

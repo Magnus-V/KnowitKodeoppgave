@@ -14,12 +14,9 @@
   <p id="showName" class="name"></p>
 </div>
 
-
-
 <div>
   <button type="button" class="btn btn-primary" name="button" id="reserver">Reserver nå</button>
 </div>
-
 
 <div class="centered-container">
   <div class="washer">
@@ -30,17 +27,17 @@
   </div>
   <div class="washer">
   </div>
+  <div class="washer reserved">
+  </div>
   <div class="washer">
+  </div>
+  <div class="washer reserved">
   </div>
   <div class="washer">
   </div>
   <div class="washer">
   </div>
-  <div class="washer">
-  </div>
-  <div class="washer">
-  </div>
-  <div class="washer">
+  <div class="washer reserved">
   </div>
   <div class="washer">
   </div>
@@ -57,12 +54,17 @@
 
       </div>
       <div class="modal-body">
-        <Select>Velg Program
-        <option value="handwash">Håndvask 20min (30'C)</option><br>
-        <option value="laundry">Tøyvask 60 min (40'C)</option><br>
-        <option value="hotwash">Kokvask 90 min (60'C)</option>
-        </select>
-      </div>
+        <div class="form-group">
+          <input type="text" class="form-control" name="Navn" placeholder="Ditt navn">
+        </div>
+        <div>
+          <select id="selectedProgram" class="form-control">Velg Program
+            <option>Håndvask 30°C (20 min)</option><br>
+            <option>Tøyvask  40°C (60 min)</option><br>
+            <option>Kokvask  60°C (90 min)</option>
+          </select>
+        </div>
+        </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-primary" data-dismiss="modal">Velg</button>
         <button type="button" class="btn btn-danger" data-dismiss="modal">Lukk</button>
@@ -80,12 +82,17 @@
 
       </div>
       <div class="modal-body">
-        <Select id="selectedProgram">Velg Program
-        <option>Håndvask 20min (30'C)</option><br>
-        <option>Tøyvask 60 min (40'C)</option><br>
-        <option>Kokvask 90 min (60'C)</option>
-        </select>
-      </div>
+        <div class="form-group">
+          <input type="text" class="form-control" name="Navn" placeholder="Ditt navn">
+        </div>
+        <div>
+          <select id="selectedProgram" class="form-control">Velg Program
+            <option>Håndvask 30°C (20 min)</option><br>
+            <option>Tøyvask  40°C (60 min)</option><br>
+            <option>Kokvask  60°C (90 min)</option>
+          </select>
+        </div>
+        </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-primary" id="chosenBtn" data-dismiss="modal">Velg</button>
         <button type="button" class="btn btn-danger" data-dismiss="modal">Lukk</button>
