@@ -58,9 +58,9 @@
       </div>
       <div class="modal-body">
         <Select>Velg Program
-        <option>Håndvask 20min (30'C)</option><br>
-        <option>Tøyvask 60 min (40'C)</option><br>
-        <option>Kokvask 90 min (60'C)</option>
+        <option value="handwash">Håndvask 20min (30'C)</option><br>
+        <option value="laundry">Tøyvask 60 min (40'C)</option><br>
+        <option value="hotwash">Kokvask 90 min (60'C)</option>
         </select>
       </div>
       <div class="modal-footer">
@@ -80,14 +80,14 @@
 
       </div>
       <div class="modal-body">
-        <Select>Velg Program
+        <Select id="selectedProgram">Velg Program
         <option>Håndvask 20min (30'C)</option><br>
         <option>Tøyvask 60 min (40'C)</option><br>
         <option>Kokvask 90 min (60'C)</option>
         </select>
       </div>
       <div class="modal-footer">
-        <button type="button" class="btn btn-primary" data-dismiss="modal">Velg</button>
+        <button type="button" class="btn btn-primary" id="chosenBtn" data-dismiss="modal">Velg</button>
         <button type="button" class="btn btn-danger" data-dismiss="modal">Lukk</button>
       </div>
     </div>

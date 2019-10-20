@@ -26,3 +26,8 @@ $('#logginnBtnConfirm').click(function(){
     gUsername = $('#inputUsername').val();
   }
 });
+
+$('#chosenBtn').click(function(){
+  var x = $('#selectedProgram').selectedIndex;
+  debugger;
+})
